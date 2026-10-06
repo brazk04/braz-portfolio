@@ -43,7 +43,7 @@
         x: Math.random() * width, y: Math.random() * height,
         depth, size: .6 + depth * 1.6, speed: .05 + depth * .18,
         angle, phase: Math.random() * Math.PI * 2,
-        violet: particles.length % 5 === 0,
+        accent: particles.length % 5 === 0,
         offsetX: 0, offsetY: 0, drawX: 0, drawY: 0,
       });
     }
@@ -108,7 +108,7 @@
     context.clearRect(0, 0, width, height);
     for (const p of particles) {
       context.globalAlpha = p.alpha;
-      context.fillStyle = p.violet ? "#8b5cf6" : "#fafafa";
+      context.fillStyle = p.accent ? "#1e40af" : "#fafafa";
       context.beginPath();
       context.arc(p.drawX, p.drawY, p.size, 0, Math.PI * 2);
       context.fill();

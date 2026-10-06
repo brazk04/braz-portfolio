@@ -68,8 +68,8 @@ function createScene(T) {
     geometries.push(geometry); materials.push({ material, opacity: material.opacity });
     const object = new type(geometry, material); parent.add(object); return object;
   }
-  add(new T.IcosahedronGeometry(.62, 0), new T.MeshBasicMaterial({ color: '#7C3AED', transparent: true, opacity: .09, depthWrite: false }));
-  const inner = add(new T.IcosahedronGeometry(.85, 0), new T.MeshBasicMaterial({ color: '#8B5CF6', wireframe: true, transparent: true, opacity: .32, depthWrite: false }));
+  add(new T.IcosahedronGeometry(.62, 0), new T.MeshBasicMaterial({ color: '#1e3a8a', transparent: true, opacity: .09, depthWrite: false }));
+  const inner = add(new T.IcosahedronGeometry(.85, 0), new T.MeshBasicMaterial({ color: '#1e40af', wireframe: true, transparent: true, opacity: .32, depthWrite: false }));
   const shell = new T.IcosahedronGeometry(1.25, 1);
   add(new T.WireframeGeometry(shell), new T.LineBasicMaterial({ color: '#FAFAFA', transparent: true, opacity: .14, depthWrite: false }), T.LineSegments);
   shell.dispose();
@@ -86,12 +86,12 @@ function createScene(T) {
     return add(geometry, new T.PointsMaterial({ color, size, sizeAttenuation: true, transparent: true, opacity, depthWrite: false }), T.Points, parent);
   }
   cloud(weak ? 60 : 110, 1.26, '#FAFAFA', .024, .55, core);
-  cloud(weak ? 32 : 60, .91, '#8B5CF6', .035, .7, core);
+  cloud(weak ? 32 : 60, .91, '#1e40af', .035, .7, core);
   const orbit = cloud(weak ? 50 : 100, 1.8, '#A1A1AA', .022, .38, rig);
   const rings = [];
   for (let i = 0; i < (weak ? 1 : 2); i++) {
     const points = new T.EllipseCurve(0, 0, 1.75 + i * .15, 1.75 + i * .15, 0, Math.PI * 2).getPoints(weak ? 64 : 96);
-    const ring = add(new T.BufferGeometry().setFromPoints(points), new T.LineBasicMaterial({ color: i ? '#FAFAFA' : '#8B5CF6', transparent: true, opacity: i ? .12 : .23, depthWrite: false }), T.LineLoop, rig);
+    const ring = add(new T.BufferGeometry().setFromPoints(points), new T.LineBasicMaterial({ color: i ? '#FAFAFA' : '#1e40af', transparent: true, opacity: i ? .12 : .23, depthWrite: false }), T.LineLoop, rig);
     ring.rotation.set(.9 + i * .7, i * .5, .3); rings.push(ring);
   }
   let frame = 0, last = 0, elapsed = 0, entrance = 0, targetX = 0, targetY = 0, hover = false, speed = 1, lost = false, disposed = false;
