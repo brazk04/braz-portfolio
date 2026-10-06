@@ -22,3 +22,6 @@ coverage/
 # Auditorias e perfis temporários de navegador
 .browser*/
 .audit-final.py
+
+.vercel
+.env*
