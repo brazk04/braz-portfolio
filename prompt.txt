@@ -1,0 +1,846 @@
+FASE 9 — GITHUB + VERCEL + DEPLOY FINAL
+
+O portfólio de João Gabriel Lira Lemes Braz está concluído.
+
+Marca pessoal:
+
+braz.
+
+Agora quero realizar a publicação definitiva do projeto.
+
+GitHub:
+
+https://github.com/brazk04
+
+Nome desejado para o repositório:
+
+braz-portfolio
+
+O site será hospedado na Vercel.
+
+==================================================
+OBJETIVO
+==================================================
+
+Executar todo o processo final:
+
+1. revisar o projeto
+2. preparar Git
+3. criar/publicar repositório no GitHub
+4. conectar o projeto à Vercel
+5. realizar deploy
+6. obter URL pública real
+7. atualizar SEO com a URL de produção
+8. realizar commit final
+9. realizar novo deploy
+10. testar produção
+
+Não recrie o projeto.
+
+Não altere o design sem necessidade.
+
+==================================================
+IMPORTANTE — CREDENCIAIS
+==================================================
+
+NUNCA solicitar ou inserir:
+
+- senha do GitHub
+- token pessoal em arquivo
+- senha da Vercel
+- secrets diretamente no código
+
+Se GitHub CLI ou Vercel CLI não estiverem autenticados:
+
+pare apenas nessa etapa e informe exatamente qual comando de autenticação o usuário precisa executar.
+
+Depois continue normalmente.
+
+NÃO salvar credenciais no projeto.
+
+==================================================
+ETAPA 1 — AUDITORIA FINAL
+==================================================
+
+Antes de qualquer push:
+
+revise o projeto completo.
+
+Verifique:
+
+- index.html
+- CSS
+- JavaScript
+- partículas
+- Three.js
+- Data Core
+- galeria dos projetos
+- lightbox
+- responsividade
+- currículo
+- favicon
+- manifest
+- SEO
+- imagens
+- links
+- README
+
+Abra o projeto localmente.
+
+Verifique o console.
+
+Não deve existir:
+
+- erro JavaScript
+- erro de carregamento
+- 404
+- referência para arquivo inexistente
+
+==================================================
+ETAPA 2 — IMAGENS DOS PROJETOS
+==================================================
+
+Verifique novamente as pastas:
+
+assets/images/projects/nexa/
+assets/images/projects/morfy/
+assets/images/projects/commit-zero/
+
+Confirme que todos os caminhos utilizados pelo HTML correspondem a arquivos PNG realmente existentes.
+
+Não renomear arquivos nesta etapa.
+
+==================================================
+ETAPA 3 — CURRÍCULO
+==================================================
+
+Confirmar existência de:
+
+assets/documents/curriculo-joao-gabriel.pdf
+
+Se o nome real for diferente:
+
+utilizar o arquivo real existente.
+
+Garantir que o botão:
+
+Baixar currículo
+
+funcione corretamente.
+
+Não criar PDF vazio ou placeholder.
+
+==================================================
+ETAPA 4 — LINKS
+==================================================
+
+GitHub deve utilizar:
+
+https://github.com/brazk04
+
+Verificar todos os outros links.
+
+Remover:
+
+href="#"
+
+quando não houver funcionalidade real.
+
+Caso LinkedIn ou e-mail ainda não tenham sido definidos:
+
+NÃO inventar.
+
+Deixar o elemento oculto ou preparado para futura inclusão.
+
+==================================================
+ETAPA 5 — SEGURANÇA
+==================================================
+
+Antes do commit:
+
+buscar possíveis dados sensíveis no projeto.
+
+Verificar principalmente:
+
+.env
+.env.local
+tokens
+API keys
+senhas
+credenciais
+arquivos pessoais
+
+Esse portfólio não deveria precisar de secrets.
+
+Se encontrar credencial:
+
+NÃO realizar push.
+
+Informar o problema primeiro.
+
+==================================================
+ETAPA 6 — .GITIGNORE
+==================================================
+
+Revisar .gitignore.
+
+Mesmo sendo projeto estático, incluir caso aplicável:
+
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db
+.vercel/
+
+Não ignorar arquivos necessários do site.
+
+==================================================
+ETAPA 7 — README
+==================================================
+
+Atualizar README.md.
+
+Título:
+
+# braz. — Portfolio
+
+Adicionar descrição:
+
+Portfólio pessoal de João Gabriel Lira Lemes Braz, Desenvolvedor de Software e estudante de Engenharia de Software.
+
+Adicionar seções:
+
+- Sobre o projeto
+- Tecnologias
+- Estrutura
+- Projetos apresentados
+- Executando localmente
+- Deploy
+- Autor
+
+Tecnologias principais:
+
+HTML5
+CSS3
+JavaScript
+Three.js
+
+Também mencionar:
+
+Canvas API
+IntersectionObserver
+
+GitHub do autor:
+
+https://github.com/brazk04
+
+Depois do deploy, adicionar a URL pública da Vercel ao README.
+
+==================================================
+ETAPA 8 — GIT
+==================================================
+
+Verificar se o diretório já possui Git.
+
+Executar:
+
+git status
+
+Se NÃO estiver inicializado:
+
+git init
+
+Configurar branch principal:
+
+main
+
+Não alterar configuração global do Git sem necessidade.
+
+==================================================
+ETAPA 9 — PRIMEIRO COMMIT
+==================================================
+
+Adicionar os arquivos:
+
+git add .
+
+Revisar o que será enviado:
+
+git status
+
+Garantir novamente que não existem secrets.
+
+Então criar commit:
+
+git commit -m "feat: launch braz portfolio"
+
+==================================================
+ETAPA 10 — GITHUB CLI
+==================================================
+
+Verificar se:
+
+gh
+
+está instalado.
+
+Executar:
+
+gh auth status
+
+Se não estiver autenticado:
+
+não tente contornar autenticação.
+
+Informe ao usuário para executar:
+
+gh auth login
+
+Depois continue quando houver autenticação.
+
+==================================================
+ETAPA 11 — REPOSITÓRIO GITHUB
+==================================================
+
+Verificar primeiro se existe:
+
+brazk04/braz-portfolio
+
+Se NÃO existir:
+
+criar repositório público:
+
+brazk04/braz-portfolio
+
+Descrição sugerida:
+
+Portfolio pessoal de João Gabriel Lira Lemes Braz — Software Developer.
+
+Configurar o repositório local como origem.
+
+Exemplo de fluxo:
+
+gh repo create brazk04/braz-portfolio --public --source=. --remote=origin --push
+
+Use comando equivalente caso necessário.
+
+IMPORTANTE:
+
+Se o repositório já existir:
+
+NÃO sobrescrever nada automaticamente.
+
+Verificar remote e histórico antes.
+
+Se houver conteúdo remoto conflitante:
+
+pare e informe.
+
+==================================================
+ETAPA 12 — CONFIRMAR GITHUB
+==================================================
+
+Após push:
+
+verificar:
+
+git status
+
+Deve indicar working tree clean.
+
+Verificar:
+
+git remote -v
+
+Confirmar origin apontando para:
+
+https://github.com/brazk04/braz-portfolio.git
+
+ou equivalente SSH.
+
+==================================================
+ETAPA 13 — VERCEL CLI
+==================================================
+
+Verificar:
+
+vercel --version
+
+Se Vercel CLI não estiver instalada:
+
+pode instalar utilizando npm, caso Node/npm estejam disponíveis:
+
+npm install -g vercel
+
+Não transformar o projeto em aplicação Node por causa disso.
+
+Vercel CLI é apenas ferramenta de deploy.
+
+==================================================
+ETAPA 14 — AUTENTICAÇÃO VERCEL
+==================================================
+
+Executar uma verificação de autenticação.
+
+Se necessário:
+
+vercel login
+
+Não tentar armazenar token manualmente dentro do projeto.
+
+A autenticação deve ser realizada pelo fluxo oficial da Vercel.
+
+==================================================
+ETAPA 15 — CONFIGURAÇÃO VERCEL
+==================================================
+
+Esse é um site estático.
+
+Não adicionar framework desnecessário.
+
+O diretório raiz possui:
+
+index.html
+
+Portanto configurar como projeto estático.
+
+Não definir:
+
+build command
+
+se ele não for necessário.
+
+Não criar servidor Node.
+
+Não criar Express.
+
+Não criar API.
+
+==================================================
+ETAPA 16 — PRIMEIRO DEPLOY
+==================================================
+
+Realizar primeiro deploy.
+
+Pode utilizar:
+
+vercel
+
+ou processo equivalente.
+
+Associar o projeto ao repositório correto.
+
+Nome do projeto sugerido:
+
+braz-portfolio
+
+Depois confirmar que o preview funciona.
+
+==================================================
+ETAPA 17 — DEPLOY DE PRODUÇÃO
+==================================================
+
+Depois:
+
+vercel --prod
+
+Guardar a URL de produção REAL retornada pela Vercel.
+
+Exemplo conceitual:
+
+https://braz-portfolio.vercel.app
+
+IMPORTANTE:
+
+Esse exemplo NÃO deve ser utilizado sem confirmação.
+
+Usar somente a URL realmente fornecida pela Vercel.
+
+==================================================
+ETAPA 18 — ATUALIZAR SEO COM URL REAL
+==================================================
+
+Agora que existe uma URL pública real:
+
+atualizar:
+
+<link rel="canonical">
+
+og:url
+
+JSON-LD:
+
+"url"
+
+e qualquer outra referência que estava marcada:
+
+TODO: adicionar URL após deploy
+
+Utilizar exatamente a URL pública real.
+
+==================================================
+ETAPA 19 — OPEN GRAPH
+==================================================
+
+Se:
+
+assets/images/og-cover.webp
+
+existir:
+
+utilizar URL absoluta em:
+
+og:image
+twitter:image
+
+Exemplo:
+
+URL_DO_SITE/assets/images/og-cover.webp
+
+Mas construir com a URL REAL.
+
+Se a imagem não existir:
+
+não criar caminho quebrado.
+
+==================================================
+ETAPA 20 — JSON-LD
+==================================================
+
+Garantir JSON-LD:
+
+Person
+
+Com:
+
+name:
+João Gabriel Lira Lemes Braz
+
+jobTitle:
+Desenvolvedor de Software
+
+url:
+URL real do portfólio
+
+sameAs:
+
+https://github.com/brazk04
+
+LinkedIn somente se houver URL real.
+
+==================================================
+ETAPA 21 — README COM SITE
+==================================================
+
+Adicionar ao README:
+
+## Online
+
+URL real do portfólio.
+
+Não utilizar endereço fictício.
+
+==================================================
+ETAPA 22 — COMMIT DO DEPLOY
+==================================================
+
+Depois das alterações de produção:
+
+git add .
+
+git commit -m "chore: configure production deployment"
+
+git push origin main
+
+==================================================
+ETAPA 23 — DEPLOY FINAL
+==================================================
+
+Como o GitHub pode estar integrado à Vercel:
+
+verificar se um novo deploy foi disparado automaticamente.
+
+Se não:
+
+executar:
+
+vercel --prod
+
+Garantir que a versão atualizada esteja em produção.
+
+==================================================
+ETAPA 24 — TESTE DA URL REAL
+==================================================
+
+Abrir o site publicado.
+
+Testar completamente em produção.
+
+Testar:
+
+Navbar
+Hero
+partículas
+Three.js
+Data Core
+mouse interactions
+Sobre
+Experiência
+Stack
+Projetos
+screenshots
+galerias
+lightbox
+Formação
+Campus Party
+Contato
+Footer
+currículo
+GitHub
+
+==================================================
+ETAPA 25 — TESTAR LIGHTBOX
+==================================================
+
+Confirmar:
+
+imagem abre
+ESC fecha
+setas funcionam
+ArrowLeft funciona
+ArrowRight funciona
+scroll é restaurado
+
+==================================================
+ETAPA 26 — TESTAR THREE.JS
+==================================================
+
+Confirmar em produção:
+
+Three.js carrega
+Data Core aparece
+não existem erros CORS
+não existem imports quebrados
+canvas adapta ao resize
+
+==================================================
+ETAPA 27 — TESTAR PARTICULAS
+==================================================
+
+Confirmar:
+
+canvas carrega
+mouse reaction funciona
+não bloqueia elementos
+mobile possui comportamento reduzido
+
+==================================================
+ETAPA 28 — TESTAR MOBILE
+==================================================
+
+Verificar pelo menos:
+
+375px
+390px
+430px
+768px
+
+Confirmar:
+
+nenhum overflow horizontal
+menu mobile funciona
+galeria funciona
+textos não cortam
+3D não compromete performance
+
+==================================================
+ETAPA 29 — HTTPS
+==================================================
+
+Confirmar que a Vercel está servindo:
+
+HTTPS
+
+Não adicionar configuração manual desnecessária.
+
+==================================================
+ETAPA 30 — 404
+==================================================
+
+Como o site atualmente é single-page estático:
+
+não criar roteamento desnecessário.
+
+Verificar apenas que:
+
+/
+
+carrega normalmente.
+
+==================================================
+ETAPA 31 — PERFORMANCE
+==================================================
+
+Executar auditoria Lighthouse caso disponível.
+
+Dar atenção a:
+
+Performance
+Accessibility
+Best Practices
+SEO
+
+Se encontrar problemas simples:
+
+corrigir.
+
+Exemplos:
+
+imagem muito pesada
+alt ausente
+contraste ruim
+layout shift
+arquivo bloqueante
+
+Não redesenhar o site para perseguir pontuação 100.
+
+==================================================
+ETAPA 32 — CONSOLE
+==================================================
+
+O site publicado deve abrir sem:
+
+console.error
+uncaught exceptions
+404
+WebGL errors graves
+
+Warnings de navegador não críticos podem ser avaliados individualmente.
+
+==================================================
+ETAPA 33 — GITHUB REPOSITORY QUALITY
+==================================================
+
+Verificar página do repositório.
+
+Garantir:
+
+README bem formatado
+descrição
+branch main
+arquivos organizados
+
+Se possível pela GitHub CLI, configurar:
+
+homepage
+
+para a URL pública real do Vercel.
+
+Configurar descrição:
+
+Portfolio pessoal de João Gabriel Lira Lemes Braz — Software Developer.
+
+==================================================
+ETAPA 34 — NÃO FAZER
+==================================================
+
+Não adicionar:
+
+Next.js
+React
+Express
+backend
+banco de dados
+API
+Docker
+
+apenas para realizar deploy.
+
+O portfólio continua sendo um site frontend estático.
+
+==================================================
+ETAPA 35 — NÃO ALTERAR DESIGN
+==================================================
+
+Não remover:
+
+partículas
+Data Core 3D
+tipografia de fundo
+animações
+efeitos
+galerias
+identidade braz.
+
+Apenas corrigir algo visual se estiver quebrado em produção.
+
+==================================================
+ETAPA 36 — RELATÓRIO FINAL
+==================================================
+
+Ao concluir, me informe claramente:
+
+GITHUB
+URL do repositório
+
+VERCEL
+URL de produção
+
+BRANCH
+branch publicada
+
+COMMITS
+últimos commits realizados
+
+STATUS
+se o deploy está funcionando
+
+LIGHTHOUSE
+resultados, caso tenha sido executado
+
+PENDÊNCIAS
+qualquer informação que ainda precise ser adicionada
+
+==================================================
+RESULTADO ESPERADO
+==================================================
+
+Ao final eu quero ter:
+
+Repositório:
+
+github.com/brazk04/braz-portfolio
+
++
+
+Site funcionando publicamente na Vercel.
+
+A URL da Vercel deve ter sido obtida do deploy real.
+
+O código local, GitHub e Vercel devem estar sincronizados.
+
+==================================================
+CRITÉRIOS FINAIS
+==================================================
+
+Só considere a tarefa concluída quando:
+
+- Git estiver configurado
+- repositório existir no GitHub
+- branch main estiver publicada
+- todos os arquivos necessários estiverem no GitHub
+- nenhum secret tiver sido enviado
+- Vercel estiver configurada
+- produção estiver publicada
+- URL real estiver disponível
+- canonical estiver atualizado
+- Open Graph estiver atualizado
+- JSON-LD estiver atualizado
+- README tiver URL pública
+- GitHub apontar para o site publicado
+- commit final tiver sido enviado
+- deploy final estiver online
+- site tiver sido testado em produção
+- nenhum erro crítico permanecer

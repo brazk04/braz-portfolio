@@ -1,0 +1,75 @@
+/* Base mobile; ampliar o layout conforme o espaço disponível. */
+@media (max-width: 63.99rem) {
+  .header-inner { flex-wrap: wrap; }
+  .site-header nav { flex-basis: 100%; flex-wrap: wrap; padding-block: var(--space-4); }
+  .menu-enhanced .menu-toggle { display: flex; }
+  .menu-enhanced .header-inner { flex-wrap: nowrap; }
+  .menu-enhanced .site-header nav { position: fixed; inset: var(--header-height) 0 auto; max-height: calc(100dvh - var(--header-height)); overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; align-items: stretch; gap: var(--space-2); padding: var(--space-5); background: var(--bg-primary); border-bottom: 1px solid var(--border); visibility: hidden; opacity: 0; transform: translateY(-8px); }
+  .menu-enhanced .site-header nav a { padding: var(--space-2) var(--space-4); }
+  .menu-enhanced .menu-open nav { visibility: visible; opacity: 1; transform: translateY(0); }
+  .menu-open .menu-toggle span:first-child { transform: translateY(4px) rotate(45deg); }
+  .menu-open .menu-toggle span:last-child { transform: translateY(-4px) rotate(-45deg); }
+}
+@media (min-width: 48rem) {
+  .container { width: min(calc(100% - 2 * var(--space-7)), var(--container-width)); }
+  :root { --section-space: 7rem; }
+  .hero { grid-template-columns: minmax(0, 3fr) minmax(0, 1fr); column-gap: var(--space-6); padding-top: var(--space-8); }
+  .hero-copy { grid-column: 1 / -1; }
+  .hero-context { grid-column: 2; grid-row: 2; }
+  .hero-bottom { grid-row: 3; }
+  .hero-bottom { grid-column: 1 / -1; }
+  .hero-context { align-self: end; margin-bottom: var(--space-2); }
+  .about-layout { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: var(--space-7); }
+  .experience-item { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--space-6); }
+  .experience-status { padding-top: var(--space-2); }
+  .section-header { margin-bottom: var(--space-8); }
+  .stack-row { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: var(--space-6); }
+  .stack-category { margin-top: var(--space-2); }
+  .featured-project { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-6); }
+  .featured-preview { margin-top: var(--space-7); }
+  .project-row { grid-template-columns: 24px minmax(0, 1fr) minmax(0, .65fr); gap: var(--space-5); }
+  .project-number { padding-top: var(--space-2); }
+  .education-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-7); }
+  .education-highlight { margin-top: var(--space-8); padding: var(--space-7); }
+  .highlight-year { position: absolute; right: var(--space-6); bottom: var(--space-5); z-index: -1; margin: 0; opacity: .5; }
+  .contact-layout { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--space-7); }
+  .footer-identity { text-align: right; }
+  h1 { font-size: clamp(2.75rem, 4.9vw, 4.5rem); }
+}
+
+@media (min-width: 64rem) {
+  .hero { column-gap: var(--space-7); row-gap: var(--space-7); }
+  .hero-copy { grid-column: 1; }
+  .hero-context { grid-column: 2; grid-row: 1; }
+  .hero-bottom { grid-row: 2; }
+  .hero h1 { font-size: clamp(3.5rem, 6.1vw, 5.6rem); }
+  h1 { font-size: clamp(3rem, 5.4vw, 5rem); }
+  .site-header nav { margin-left: auto; gap: var(--space-4); font-size: .8125rem; }
+  .about-layout { gap: var(--space-9); }
+  .experience-item { padding-block: var(--space-8); }
+  .stack-row { padding-block: var(--space-7); gap: var(--space-7); }
+  .stack-technologies { column-gap: var(--space-6); }
+  .featured-project { gap: var(--space-8); padding-top: var(--space-7); }
+  .other-projects { margin-top: var(--space-9); }
+  .project-row { grid-template-columns: 40px minmax(0, 1fr) 280px; gap: var(--space-7); padding-block: var(--space-7); }
+  .education-layout { gap: var(--space-9); }
+  .education-highlight { padding: var(--space-8); }
+  .contact-layout { gap: var(--space-9); }
+  .contact-signature { margin-top: var(--space-9); }
+}
+
+@media (max-width: 29.99rem) {
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-bottom { flex-direction: column; }
+}
+
+@media (max-width: 23rem) {
+  .container { width: min(calc(100% - 2 * var(--space-4)), var(--container-width)); }
+  h1 { font-size: 2.25rem; }
+  .hero h1 { font-size: 2.25rem; }
+  .eyebrow { font-size: .6875rem; letter-spacing: .08em; }
+}
+
+@media (min-width: 30rem) and (max-width: 47.99rem) {
+  .about-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

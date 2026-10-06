@@ -1,0 +1,66 @@
+@keyframes reveal-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes title-enter { from { transform: translateY(105%); } to { transform: translateY(0); } }
+@keyframes intro-exit { 0%, 28% { clip-path: inset(0); opacity: 1; } 100% { clip-path: inset(0 0 100%); opacity: 0; } }
+@keyframes intro-line { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes dot-signal { 50% { transform: translateY(-4px) scale(1.15); } }
+@keyframes scroll-signal { 50% { transform: translateY(3px); } }
+@keyframes brand-pulse { 50% { filter: brightness(1.2); } }
+@media (prefers-reduced-motion: no-preference) {
+  a, button { transition: color var(--duration-fast) ease, background-color var(--duration-fast) ease, transform var(--duration-fast) var(--ease-out), translate var(--duration-fast) var(--ease-out); }
+  .site-header { transition: background-color var(--duration-normal) ease, border-color var(--duration-normal) ease; }
+  .site-header nav { transition: opacity var(--duration-fast) ease, transform var(--duration-fast) ease, visibility var(--duration-fast) ease; }
+  .menu-toggle span { transition: transform var(--duration-fast) ease; }
+  .hero-title-line > span { animation: title-enter var(--duration-slow) var(--ease-out) both; animation-delay: var(--hero-delay, 0ms); }
+  .hero-title-line:nth-child(2) > span { animation-delay: calc(var(--hero-delay, 0ms) + 100ms); }
+  .hero-description, .hero-note { animation: reveal-up var(--duration-slow) calc(var(--hero-delay, 0ms) + 160ms) var(--ease-out) both; }
+  .hero-actions, .hero-badges, .hero-context { animation: reveal-up var(--duration-slow) calc(var(--hero-delay, 0ms) + 240ms) var(--ease-out) both; }
+  .brand-intro { animation: intro-exit 1300ms var(--ease-smooth) both; }
+  .brand-intro > span { animation: reveal-up 500ms var(--ease-out) both; }
+  .brand-intro i { animation: intro-line 650ms 150ms var(--ease-out) both; }
+  .scroll-cue span { animation: scroll-signal 1800ms var(--ease-smooth) 3; }
+  .brand .accent, .brand > span { display: inline-block; }
+  .brand:hover > span { animation: dot-signal var(--duration-normal) var(--ease-out); }
+  .brand-egg { animation: brand-pulse 600ms var(--ease-smooth); }
+  .experience-content, .project-row, .featured-project, .education-highlight, .contact-link { transition: border-color var(--duration-fast) ease; }
+  .experience-content h3, .project-summary h3, .brand span, .contact-signature span { transition: color var(--duration-fast) ease; }
+  .stack-technologies li, .experience-item { transition: opacity var(--duration-fast) ease, border-color var(--duration-fast) ease, transform var(--duration-fast) var(--ease-out); }
+  .project-link span, .contact-arrow { transition: transform var(--duration-fast) var(--ease-out), color var(--duration-fast) ease; }
+  .project-image { transition: transform var(--duration-normal) var(--ease-out); }
+  .button::before { transition: opacity var(--duration-fast) ease; }
+  .site-header nav a::after { transition: transform var(--duration-normal) var(--ease-out); }
+  /* Sem melhoria por JavaScript, títulos e conteúdo permanecem visíveis. */
+  .reveal-enabled .reveal { opacity: 0; transform: translateY(18px); transition: opacity var(--duration-slow) var(--ease-out), transform var(--duration-slow) var(--ease-out); transition-delay: var(--reveal-delay, 0ms); }
+  .reveal-enabled [data-reveal="left"] { transform: translateX(-18px); }
+  .reveal-enabled [data-reveal="right"] { transform: translateX(18px); }
+  .reveal-enabled [data-reveal="scale"] { transform: scale(.98); }
+  .reveal-enabled .reveal.is-visible, .reveal-enabled .reveal:focus-within { opacity: 1; transform: translateY(0); }
+  .reveal-enabled .section-header .title-reveal-inner { transform: translateY(105%); transition: transform var(--duration-slow) var(--ease-out); }
+  .reveal-enabled .section-header.is-visible .title-reveal-inner { transform: none; }
+  .motion-word { transition: color var(--duration-slow) ease; }
+  .is-visible .motion-word { color: var(--text-primary); }
+  .reveal-enabled .featured-preview .preview-media { clip-path: inset(0 100% 0 0); transition: clip-path var(--duration-slow) var(--ease-out); }
+  .reveal-enabled .featured-preview.is-visible .preview-media { clip-path: inset(0); }
+  .is-visible .stack-technologies li, .is-visible .education-item { animation: reveal-up var(--duration-normal) var(--ease-out) both; animation-delay: calc(var(--item-index, 0) * 60ms); }
+  .motion-ready .section::after { transform: scaleX(0); transform-origin: left; transition: transform var(--duration-slow) var(--ease-out); }
+  .motion-ready .section.section-active::after { transform: scaleX(1); }
+  @media (hover: hover) and (pointer: fine) {
+    .button:not(:disabled):hover { transform: translateY(-2px); }
+    .stack-technologies li:hover { transform: translateY(-1px); }
+    .project-link:hover span { transform: translate(3px, -3px); }
+    .contact-link:hover .contact-arrow { transform: translate(3px, -3px); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enabled .reveal { opacity: 1; transform: none; }
+  .brand-intro, .floating-preview, .particle-canvas { display: none !important; }
+  .hero-backdrop, .contact-signature, .project-image, .button, .title-reveal-inner { transform: none !important; translate: none !important; }
+  .featured-preview .preview-media { clip-path: none !important; }
+  .motion-word { color: var(--text-primary); }
+  .experience-item, .stack-technologies li { opacity: 1 !important; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

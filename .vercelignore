@@ -1,0 +1,10 @@
+.git/
+.env
+.env.*
+node_modules/
+README.md
+prompt.txt
+.gitignore
+.audit-final.py
+.browser*/
+*.log

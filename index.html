@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#09090B">
+    <meta name="description" content="Portfólio de João Gabriel Lira Lemes Braz, desenvolvedor de software e estudante de Engenharia de Software com experiência em backend, bancos de dados, desenvolvimento web e Inteligência Artificial.">
+    <meta name="author" content="João Gabriel Lira Lemes Braz">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="João Gabriel Lira Lemes Braz | Desenvolvedor de Software">
+    <meta property="og:description" content="Portfólio profissional com projetos, experiência, tecnologias e formação.">
+    <meta property="og:site_name" content="braz.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="João Gabriel Lira Lemes Braz | Desenvolvedor de Software">
+    <meta name="twitter:description" content="Portfólio profissional com projetos, experiência, tecnologias e formação.">
+    <!-- TODO: adicionar URL canônica após deploy
+    <link rel="canonical" href="URL_CANONICA">
+    -->
+    <!-- TODO: atualizar og:url após deploy
+    <meta property="og:url" content="URL_CANONICA">
+    -->
+    <!-- TODO: adicionar imagem Open Graph em assets/images/og-cover.webp.
+         Após deploy, descomentar e substituir por URLs absolutas da imagem real.
+    <meta property="og:image" content="URL_ABSOLUTA/assets/images/og-cover.webp">
+    <meta property="og:image:alt" content="braz. — Portfólio de João Gabriel Lira Lemes Braz">
+    <meta name="twitter:image" content="URL_ABSOLUTA/assets/images/og-cover.webp">
+    -->
+    <title>João Gabriel Lira Lemes Braz | Desenvolvedor de Software</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/particles.js" defer></script>
+    <script src="js/project-gallery.js" defer></script>
+    <link rel="stylesheet" href="css/three.css">
+    <link rel="stylesheet" href="css/project-gallery.css">
+    <script type="module" src="js/three-scene.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "João Gabriel Lira Lemes Braz",
+        "jobTitle": "Desenvolvedor de Software",
+        "sameAs": ["https://github.com/brazk04"]
+      }
+    </script>
+  </head>
+  <body id="top">
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-light" aria-hidden="true"></div>
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="brand-intro" aria-hidden="true" hidden><span>braz<span class="accent">.</span></span><i></i></div>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="braz — início">braz<span aria-hidden="true">.</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav" hidden><span></span><span></span></button>
+        <nav id="main-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#stack">Tecnologias</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a>
+          <a class="button button-resume" href="assets/documents/curriculo-joao-gabriel.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <noscript><p class="container noscript-message">Algumas interações desta página requerem JavaScript. O conteúdo e os links continuam disponíveis.</p></noscript>
+      <section class="hero container" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true">BRAZ</div>
+        <div class="data-core" aria-hidden="true"><div class="data-core-fallback"><i></i><i></i><i></i></div></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="accent-line" aria-hidden="true"></span><span class="sr-only">Desenvolvedor de software</span><span class="hero-role" aria-hidden="true">Desenvolvedor de software</span></p>
+          <h1 id="hero-title"><span class="hero-title-line"><span>João Gabriel</span></span> <span class="hero-title-line"><span>Lira Lemes Braz<span class="accent">.</span></span></span></h1>
+          <p class="hero-description">Estudante de Engenharia de Software na UniRV, atuando com desenvolvimento de sistemas, backend, bancos de dados e Inteligência Artificial.</p>
+          <p class="hero-note">Construindo soluções eficientes, escaláveis e focadas em resolver problemas reais.</p>
+          <div class="hero-actions"><a class="button" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/brazk04" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a></div>
+          <a class="resume-link" href="assets/documents/curriculo-joao-gabriel.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a>
+          <ul class="hero-badges" aria-label="Áreas e disponibilidade"><li>Engenharia de Software</li><li>Backend</li><li>IA</li><li class="work-status">Open to work</li></ul>
+        </div>
+        <aside class="hero-context" aria-label="Formação e foco atual">
+          <dl>
+            <div><dt>Em formação</dt><dd>Engenharia de Software<span>UniRV</span></dd></div>
+            <div><dt>Foco</dt><dd>Backend / IA<br>Bancos de dados</dd></div>
+          </dl>
+        </aside>
+        <div class="hero-bottom"><span>João Gabriel — Portfolio</span><a class="scroll-cue" href="#sobre">Explorar <span aria-hidden="true">↓</span></a><span>Software · Tecnologia · Aprendizado</span></div>
+      </section>
+
+      <section class="section about" id="sobre" data-section-number="01" aria-labelledby="sobre-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">01</span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-label"><span>01</span> / Sobre</p>
+            <h2 id="sobre-title">Construindo software e evoluindo através de desafios reais.</h2>
+          </header>
+          <div class="about-layout">
+            <div class="about-copy reveal">
+              <p>Sou estudante de Engenharia de Software na UniRV e atualmente trabalho com desenvolvimento de software e suporte técnico na Águia Tecnologia. Tenho experiência com desenvolvimento e manutenção de sistemas, bancos de dados e resolução de problemas técnicos.</p>
+              <p>Trabalho e estudo <span class="motion-word">backend</span>, <span class="motion-word">desenvolvimento web</span>, <span class="motion-word">bancos de dados</span> e <span class="motion-word">Inteligência Artificial</span>. Meus conhecimentos incluem Python, PHP, JavaScript, Pascal, Django, Node.js, SQL, PostgreSQL e Supabase.</p>
+              <p>Também atuei como professor de Inglês e Programação. Essa experiência ampliou minha comunicação, didática e organização. Tenho inglês avançado.</p>
+              <p class="about-statement">Meu interesse vai além de escrever código: busco entender como construir sistemas que funcionem bem e possam evoluir.</p>
+            </div>
+            <dl class="about-facts reveal" aria-label="Informações profissionais">
+              <div><dt>Foco atual</dt><dd>Desenvolvimento de Software</dd></div>
+              <div><dt>Áreas</dt><dd>Backend &amp; Bancos de Dados</dd></div>
+              <div><dt>Formação em andamento</dt><dd>Engenharia de Software</dd></div>
+              <div><dt>Idiomas</dt><dd>Português / Inglês avançado</dd></div>
+              <div><dt>Localização</dt><dd>Brasil</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experiencia" data-section-number="02" aria-labelledby="experiencia-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">02</span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-label"><span>02</span> / Experiência</p>
+            <h2 id="experiencia-title">Desenvolvimento e resolução de problemas, na prática.</h2>
+          </header>
+          <div class="experience-list">
+            <article class="experience-item reveal" aria-labelledby="aguia-title">
+              <p class="experience-status"><span class="experience-index" aria-hidden="true">01</span><span class="status-dot" aria-hidden="true"></span>Atual</p>
+              <div class="experience-content">
+                <header><h3 id="aguia-title">Desenvolvedor e<br>Suporte Técnico</h3><p class="experience-company">Águia Tecnologia</p></header>
+                <div class="experience-description">
+                  <p>Atuo no desenvolvimento e manutenção de sistemas, na análise e resolução de problemas técnicos, no suporte aos usuários e no trabalho com bancos de dados.</p>
+                  <p>O contato direto com sistemas utilizados em ambiente profissional permite experiência prática com manutenção, evolução de funcionalidades e resolução de problemas reais.</p>
+                </div>
+                <p class="tags-label">Tecnologias relacionadas</p>
+                <ul class="tags" aria-label="Tecnologias relacionadas à experiência na Águia Tecnologia"><li>SQL</li><li>PostgreSQL</li><li>Supabase</li><li>DBeaver</li><li>IBExpert</li><li>Git</li><li>GitHub</li></ul>
+              </div>
+            </article>
+            <article class="experience-item reveal" aria-labelledby="enjoy-title">
+              <p class="experience-status"><span class="experience-index" aria-hidden="true">02</span>Experiência anterior</p>
+              <div class="experience-content">
+                <header><h3 id="enjoy-title">Professor de Inglês<br>e Programação</h3><p class="experience-company">Enjoy</p></header>
+                <div class="experience-description">
+                  <p>Atuei no ensino de Inglês e Programação, conduzindo aulas e auxiliando alunos no desenvolvimento de conhecimentos técnicos e linguísticos.</p>
+                  <p>Essa experiência contribuiu para desenvolver minha comunicação, didática, organização e resolução de problemas.</p>
+                </div>
+                <p class="tags-label">Competências desenvolvidas</p>
+                <ul class="tags" aria-label="Competências desenvolvidas na Enjoy"><li>Comunicação</li><li>Didática</li><li>Organização</li><li>Resolução de problemas</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack" data-section-number="03" aria-labelledby="stack-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">03</span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-label"><span>03</span> / Stack</p>
+            <h2 id="stack-title">Tecnologias que fazem parte do meu fluxo de desenvolvimento.</h2>
+            <p class="section-description">Uma stack construída entre desenvolvimento web, backend, bancos de dados e Inteligência Artificial.</p>
+          </header>
+          <div class="stack-list">
+            <div class="stack-row reveal" role="group" aria-labelledby="stack-languages">
+              <h3 class="stack-category" id="stack-languages">Linguagens</h3>
+              <ul class="stack-technologies"><li>Python</li><li>PHP</li><li>JavaScript</li><li>Pascal</li></ul>
+            </div>
+            <div class="stack-row reveal" role="group" aria-labelledby="stack-web">
+              <h3 class="stack-category" id="stack-web">Backend / Web</h3>
+              <ul class="stack-technologies"><li>Django</li><li>Node.js</li><li>HTML</li><li>CSS</li></ul>
+            </div>
+            <div class="stack-row reveal" role="group" aria-labelledby="stack-data">
+              <h3 class="stack-category" id="stack-data">Dados</h3>
+              <div class="stack-data-content">
+                <ul class="stack-technologies" aria-label="Bancos de dados e linguagem de consulta"><li>SQL</li><li>PostgreSQL</li><li>Supabase</li></ul>
+                <div class="stack-storage"><p>Armazenamento / Infraestrutura</p><ul class="stack-technologies" aria-label="Armazenamento"><li>Blob Storage</li></ul></div>
+              </div>
+            </div>
+            <div class="stack-row reveal" role="group" aria-labelledby="stack-tools">
+              <h3 class="stack-category" id="stack-tools">Ferramentas</h3>
+              <ul class="stack-technologies"><li>Git</li><li>GitHub</li><li>DBeaver</li><li>IBExpert</li></ul>
+            </div>
+            <div class="stack-row reveal" role="group" aria-labelledby="stack-ai">
+              <h3 class="stack-category" id="stack-ai">Inteligência Artificial</h3>
+              <ul class="stack-technologies"><li>Machine Learning</li><li>NLP</li><li>Visão Computacional</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projetos" data-section-number="04" aria-labelledby="projetos-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">04</span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-label"><span>04</span> / Projetos</p>
+            <h2 id="projetos-title">Projetos que transformam ideias em produtos reais.</h2>
+            <p class="section-description">Projetos desenvolvidos para explorar engenharia de software, produtos web, comunicação, produtividade e novas tecnologias.</p>
+          </header>
+
+          <!-- Cada article reúne nome, categoria, descrição, stack, imagem e locais para links reais. -->
+          <article class="featured-project" aria-labelledby="nexa-title">
+            <div class="featured-copy reveal">
+              <p class="project-kicker"><span>01</span> / Projeto em destaque</p>
+              <header><h3 id="nexa-title">Nexa</h3><p class="project-category">Comunicação / Colaboração</p></header>
+              <p class="project-headline">Comunicação corporativa, sem interromper o fluxo.</p>
+              <p class="project-description">Plataforma de comunicação corporativa desenvolvida para unir chat em tempo real, salas de comunicação e chamadas de áudio e vídeo em uma única experiência.</p>
+              <p class="project-description">A proposta é combinar comunicação assíncrona por canais com reuniões em tempo real, em uma experiência voltada para equipes.</p>
+              <dl class="project-purpose">
+                <div><dt>Problema</dt><dd>Reunir diferentes formas de comunicação de uma equipe.</dd></div>
+                <div><dt>Solução</dt><dd>Canais, mensagens e reuniões integrados em uma interface responsiva.</dd></div>
+              </dl>
+              <ul class="project-features" aria-label="Funcionalidades relacionadas ao Nexa">
+                <li>Autenticação e gestão de usuários.</li>
+                <li>Salas e chat em tempo real via WebSocket.</li>
+                <li>Chamadas de áudio e vídeo com múltiplos participantes via WebRTC.</li>
+                <li>Compartilhamento de arquivos e upload de imagens.</li>
+              </ul>
+              <p class="tags-label">Tecnologias principais</p>
+              <ul class="tags" aria-label="Tecnologias principais do Nexa"><li>React</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li><li>Socket.IO</li><li>WebRTC</li></ul>
+              <p class="project-infrastructure">A arquitetura mais recente utiliza PostgreSQL, com frontend na Vercel, backend e armazenamento externos.</p>
+              <div class="project-actions">
+                <!-- TODO: adicionar URL pública do Nexa
+                <a class="button" href="URL_PUBLICA_NEXA" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Nexa (nova aba)">Ver projeto <span aria-hidden="true">↗</span></a>
+                -->
+                <!-- TODO: adicionar URL do repositório do Nexa
+                <a class="project-link" href="URL_REPOSITORIO_NEXA" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do Nexa no GitHub (nova aba)">GitHub <span aria-hidden="true">↗</span></a>
+                -->
+              </div>
+            </div>
+            <figure class="project-preview project-gallery featured-preview reveal" data-project="nexa" data-project-name="Nexa" data-reveal="right">
+              <div class="preview-bar" aria-hidden="true"><span>Nexa</span><span>03 imagens</span></div>
+              <a class="preview-media project-main-media" href="assets/images/projects/nexa/chat.png" aria-label="Ampliar imagem de Nexa">
+                <span class="project-placeholder"><span class="placeholder-name">Nexa<span class="accent">.</span></span><span>Imagem indisponível</span></span>
+                <img class="project-image" src="assets/images/projects/nexa/chat.png" alt="Interface da plataforma Nexa" width="1440" height="960" loading="lazy" decoding="async">
+                <span class="project-image-hint" aria-hidden="true">Ampliar ↗</span>
+              </a>
+              <div class="project-thumbnails" aria-label="Imagens de Nexa">
+                <a class="project-thumbnail" href="assets/images/projects/nexa/chat.png" data-image-alt="Interface da plataforma Nexa" data-width="1440" data-height="960" aria-label="Exibir imagem 1 de Nexa" aria-current="true"><img src="assets/images/projects/nexa/chat.png" alt="Interface da plataforma Nexa" width="1440" height="960" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/nexa/logocomfundo.png" data-image-alt="Interface da plataforma Nexa — imagem 2" data-width="1254" data-height="1254" aria-label="Exibir imagem 2 de Nexa"><img src="assets/images/projects/nexa/logocomfundo.png" alt="Interface da plataforma Nexa — imagem 2" width="1254" height="1254" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/nexa/meeting.png" data-image-alt="Interface da plataforma Nexa — imagem 3" data-width="1440" data-height="960" aria-label="Exibir imagem 3 de Nexa"><img src="assets/images/projects/nexa/meeting.png" alt="Interface da plataforma Nexa — imagem 3" width="1440" height="960" loading="lazy" decoding="async"></a>
+              </div>
+              <figcaption>Comunicação assíncrona e reuniões em tempo real.</figcaption>
+            </figure>
+          </article>
+
+          <div class="other-projects">
+            <p class="other-projects-label reveal">Outros projetos</p>
+            <article class="project-row reveal" aria-labelledby="morfy-title">
+              <span class="project-number" aria-hidden="true">02</span>
+              <div class="project-summary">
+                <header><h3 id="morfy-title">Morfy</h3><p class="project-category">Ferramentas Web / Conversão de Arquivos</p></header>
+                <p class="project-description">Plataforma web criada para simplificar conversões de arquivos diretamente pelo navegador, oferecendo uma experiência rápida, simples e sem necessidade de cadastro.</p>
+                <p class="project-description">Pensada como uma plataforma de ferramentas online, com foco em facilidade de uso e em ampliar as possibilidades de conversão entre formatos.</p>
+                <ul class="tags" aria-label="Tecnologias do Morfy"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <div class="project-actions">
+                  <!-- TODO: adicionar URL pública do Morfy
+                  <a class="project-link" href="URL_PUBLICA_MORFY" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Morfy (nova aba)">Ver projeto <span aria-hidden="true">↗</span></a>
+                  -->
+                  <!-- TODO: adicionar URL do repositório do Morfy
+                  <a class="project-link" href="URL_REPOSITORIO_MORFY" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do Morfy no GitHub (nova aba)">GitHub <span aria-hidden="true">↗</span></a>
+                  -->
+                </div>
+              </div>
+              <figure class="project-preview project-gallery compact-preview" data-project="morfy" data-project-name="Morfy">
+              <div class="preview-bar" aria-hidden="true"><span>Morfy</span><span>04 imagens</span></div>
+              <a class="preview-media project-main-media" href="assets/images/projects/morfy/01-homepage.png" aria-label="Ampliar imagem de Morfy">
+                <span class="project-placeholder"><span class="placeholder-name">Morfy<span class="accent">.</span></span><span>Imagem indisponível</span></span>
+                <img class="project-image" src="assets/images/projects/morfy/01-homepage.png" alt="Interface da plataforma Morfy" width="780" height="1688" loading="lazy" decoding="async">
+                <span class="project-image-hint" aria-hidden="true">Ampliar ↗</span>
+              </a>
+              <div class="project-thumbnails" aria-label="Imagens de Morfy">
+                <a class="project-thumbnail" href="assets/images/projects/morfy/01-homepage.png" data-image-alt="Interface da plataforma Morfy" data-width="780" data-height="1688" aria-label="Exibir imagem 1 de Morfy" aria-current="true"><img src="assets/images/projects/morfy/01-homepage.png" alt="Interface da plataforma Morfy" width="780" height="1688" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/morfy/02-conversion-result.png" data-image-alt="Interface da plataforma Morfy — imagem 2" data-width="780" data-height="1688" aria-label="Exibir imagem 2 de Morfy"><img src="assets/images/projects/morfy/02-conversion-result.png" alt="Interface da plataforma Morfy — imagem 2" width="780" height="1688" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/morfy/03-batch.png" data-image-alt="Interface da plataforma Morfy — imagem 3" data-width="780" data-height="1688" aria-label="Exibir imagem 3 de Morfy"><img src="assets/images/projects/morfy/03-batch.png" alt="Interface da plataforma Morfy — imagem 3" width="780" height="1688" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/morfy/ChatGPT Image 12_09_2026, 15_17_09.png" data-image-alt="Interface da plataforma Morfy — imagem 4" data-width="1254" data-height="1254" aria-label="Exibir imagem 4 de Morfy"><img src="assets/images/projects/morfy/ChatGPT Image 12_09_2026, 15_17_09.png" alt="Interface da plataforma Morfy — imagem 4" width="1254" height="1254" loading="lazy" decoding="async"></a>
+              </div>
+              <figcaption>Conversão de arquivos diretamente no navegador.</figcaption>
+            </figure>
+            </article>
+            <article class="project-row reveal" aria-labelledby="commit-zero-title">
+              <span class="project-number" aria-hidden="true">03</span>
+              <div class="project-summary">
+                <header><h3 id="commit-zero-title">Commit Zero</h3><p class="project-category">Open Source / Organização</p></header>
+                <p class="project-description">Iniciativa criada por desenvolvedores com o objetivo de desenvolver e disponibilizar gratuitamente projetos, sites, ferramentas e aplicações úteis.</p>
+                <p class="project-description">Um espaço para colaboração e experimentação de novas ideias, com ferramentas para usuários e desenvolvedores.</p>
+                <ul class="tags" aria-label="Áreas da iniciativa Commit Zero"><li>Web</li><li>Open Source</li></ul>
+                <div class="project-actions">
+                  <!-- TODO: adicionar URL pública do Commit Zero
+                  <a class="project-link" href="URL_PUBLICA_COMMIT_ZERO" target="_blank" rel="noopener noreferrer" aria-label="Abrir iniciativa Commit Zero (nova aba)">Ver iniciativa <span aria-hidden="true">↗</span></a>
+                  -->
+                  <!-- TODO: adicionar URL da organização ou repositório do Commit Zero
+                  <a class="project-link" href="URL_GITHUB_COMMIT_ZERO" target="_blank" rel="noopener noreferrer" aria-label="Abrir Commit Zero no GitHub (nova aba)">GitHub <span aria-hidden="true">↗</span></a>
+                  -->
+                </div>
+              </div>
+              <figure class="project-preview project-gallery compact-preview" data-project="commit-zero" data-project-name="Commit Zero">
+              <div class="preview-bar" aria-hidden="true"><span>Commit Zero</span><span>02 imagens</span></div>
+              <a class="preview-media project-main-media" href="assets/images/projects/commit-zero/1788501364116 (1).png" aria-label="Ampliar imagem de Commit Zero">
+                <span class="project-placeholder"><span class="placeholder-name">Commit Zero<span class="accent">.</span></span><span>Imagem indisponível</span></span>
+                <img class="project-image" src="assets/images/projects/commit-zero/1788501364116 (1).png" alt="Projeto Commit Zero" width="768" height="768" loading="lazy" decoding="async">
+                <span class="project-image-hint" aria-hidden="true">Ampliar ↗</span>
+              </a>
+              <div class="project-thumbnails" aria-label="Imagens de Commit Zero">
+                <a class="project-thumbnail" href="assets/images/projects/commit-zero/1788501364116 (1).png" data-image-alt="Projeto Commit Zero" data-width="768" data-height="768" aria-label="Exibir imagem 1 de Commit Zero" aria-current="true"><img src="assets/images/projects/commit-zero/1788501364116 (1).png" alt="Projeto Commit Zero" width="768" height="768" loading="lazy" decoding="async"></a>
+                <a class="project-thumbnail" href="assets/images/projects/commit-zero/ChatGPT Image 12_09_2026, 20_44_53.png" data-image-alt="Projeto Commit Zero — imagem 2" data-width="1086" data-height="1448" aria-label="Exibir imagem 2 de Commit Zero"><img src="assets/images/projects/commit-zero/ChatGPT Image 12_09_2026, 20_44_53.png" alt="Projeto Commit Zero — imagem 2" width="1086" height="1448" loading="lazy" decoding="async"></a>
+              </div>
+              <figcaption>De devs para todos.</figcaption>
+            </figure>
+            </article>
+          </div>
+          <div class="projects-footer reveal"><p>Veja outros projetos no GitHub.</p><a class="project-link" href="https://github.com/brazk04" target="_blank" rel="noopener noreferrer" aria-label="Explorar projetos de João Gabriel no GitHub (nova aba)">Explorar GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="section education" id="formacao" data-section-number="05" aria-labelledby="formacao-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">05</span>
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-label"><span>05</span> / Formação</p>
+            <h2 id="formacao-title">Aprendizado contínuo entre engenharia, desenvolvimento e Inteligência Artificial.</h2>
+            <p class="section-description">Minha formação combina Engenharia de Software, desenvolvimento de sistemas e estudos complementares em tecnologia e IA.</p>
+          </header>
+          <div class="education-layout">
+            <div class="education-column reveal" data-reveal="left" role="group" aria-labelledby="academic-label">
+              <p class="education-label" id="academic-label">Formação acadêmica</p>
+              <article class="education-item education-current" aria-labelledby="degree-title">
+                <header><p class="education-period">Atual</p><h3 id="degree-title">Engenharia de Software</h3></header>
+                <p class="education-detail">UniRV — Universidade de Rio Verde</p>
+                <p class="education-status"><span aria-hidden="true"></span>Cursando</p>
+              </article>
+              <article class="education-item" aria-labelledby="technical-title">
+                <header><p class="education-period"><time datetime="2023">2023</time> — <time datetime="2025">2025</time></p><h3 id="technical-title">Desenvolvimento de Sistemas</h3></header>
+              </article>
+              <article class="education-item" aria-labelledby="school-title">
+                <header><h3 id="school-title">Ensino Médio</h3></header>
+                <p class="education-detail">SESI/SENAI</p>
+              </article>
+            </div>
+            <div class="education-column reveal" id="cursos" data-reveal="right" role="group" aria-labelledby="cursos-title">
+              <p class="education-label" id="cursos-title">Cursos &amp; aprendizado</p>
+              <article class="education-item" aria-labelledby="english-title">
+                <header><p class="education-period">Idiomas / <time datetime="2018">2018</time> — <time datetime="2024">2024</time></p><h3 id="english-title">Inglês</h3></header>
+                <p class="education-detail">SENAC</p>
+                <p class="education-level">Nível avançado</p>
+              </article>
+              <article class="education-item" aria-labelledby="web-course-title">
+                <header><p class="education-period"><time datetime="2024">2024</time> — <time datetime="2025">2025</time></p><h3 id="web-course-title">Programação Web</h3></header>
+                <p class="education-detail">HTML e CSS</p>
+              </article>
+              <article class="education-item" aria-labelledby="skcit-title">
+                <header><p class="education-period">Estudos em Inteligência Artificial</p><h3 id="skcit-title">SKCIT</h3></header>
+                <ul class="education-topics" aria-label="Conteúdos SKCIT"><li>Machine Learning</li><li>NLP — Processamento de Linguagem Natural</li><li>Visão Computacional</li></ul>
+              </article>
+            </div>
+          </div>
+          <article class="education-highlight reveal" data-reveal="scale" id="conquistas" aria-labelledby="conquistas-title">
+            <span class="highlight-year" aria-hidden="true">2025</span>
+            <div class="highlight-content">
+              <header><p class="education-label">Destaque / Participação</p><h3 id="conquistas-title">Olimpíadas de Inteligência Artificial de Goiás</h3><p class="highlight-event">Campus Party / Goiás / <time datetime="2025">2025</time></p></header>
+              <p class="highlight-description">Participei das Olimpíadas de Inteligência Artificial de Goiás durante a Campus Party 2025, em uma experiência voltada à aplicação prática de conceitos de IA e resolução de problemas computacionais.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contato" data-section-number="06" aria-labelledby="contato-title" tabindex="-1">
+        <span class="section-number" aria-hidden="true">06</span>
+        <div class="container">
+          <div class="contact-backdrop" aria-hidden="true">VAMOS CONSTRUIR ALGO.</div>
+          <header class="section-header reveal">
+            <p class="section-label"><span>06</span> / Contato</p>
+            <h2 id="contato-title">Vamos construir algo juntos?</h2>
+            <p class="section-description">Estou aberto a conversar sobre desenvolvimento, projetos, tecnologia e novas oportunidades.</p>
+          </header>
+          <div class="contact-layout">
+            <div class="contact-cta reveal">
+              <h3>Tem um projeto, oportunidade ou ideia para conversar?</h3>
+              <p>Entre em contato e vamos trocar uma ideia.</p>
+              <!-- TODO: adicionar e-mail profissional.
+                   Substituir o CTA pelo link mailto real com o texto Entrar em contato.
+                   Remover a mensagem de disponibilidade ao ativar o e-mail. -->
+              <a class="button contact-email" href="https://github.com/brazk04" target="_blank" rel="noopener noreferrer" aria-label="Explorar GitHub de João Gabriel (nova aba)">Explorar GitHub <span aria-hidden="true">↗</span></a>
+              <p class="contact-availability" id="email-status">E-mail profissional em breve.</p>
+              <p class="contact-closing">Boas ideias começam com uma boa conversa.</p>
+            </div>
+            <div class="contact-links reveal" role="group" aria-label="Links profissionais">
+              <a class="contact-link" href="https://github.com/brazk04" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de João Gabriel (nova aba)"><span><span class="contact-link-name">GitHub</span><span class="contact-link-description">Projetos, código e experimentos.</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+              <!-- TODO: adicionar URL do LinkedIn. Descomentar após substituir a URL.
+              <a class="contact-link" href="URL_LINKEDIN" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de João Gabriel (nova aba)"><span><span class="contact-link-name">LinkedIn</span><span class="contact-link-description">Experiência profissional e networking.</span></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+              -->
+              <a class="contact-link" href="assets/documents/curriculo-joao-gabriel.pdf" download><span><span class="contact-link-name">Baixar currículo</span><span class="contact-link-description">Resumo da minha trajetória profissional.</span></span><span class="contact-arrow" aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="contact-signature reveal" aria-hidden="true">braz<span>.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <a class="brand" href="#top" aria-label="braz — voltar ao topo">braz<span aria-hidden="true">.</span></a>
+          <div class="footer-identity"><p>João Gabriel Lira Lemes Braz</p><p>Desenvolvedor de Software</p></div>
+        </div>
+        <nav class="footer-nav" aria-label="Navegação do rodapé"><a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#stack">Stack</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a></nav>
+        <div class="footer-bottom"><p>© 2026 João Gabriel Lira Lemes Braz</p><a class="back-to-top" href="#top">Voltar ao topo <span aria-hidden="true">↑</span></a></div>
+      </div>
+    </footer>
+  </body>
+</html>
